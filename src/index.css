@@ -1,42 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Modern Graphic Design Portfolio Design System */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Core Colors - Modern, sophisticated palette */
+    --background: 0 0% 99%;
+    --foreground: 240 10% 15%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 240 10% 15%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 240 10% 15%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Brand Colors - Contemporary design aesthetic */
+    --primary: 270 15% 25%;
+    --primary-foreground: 0 0% 98%;
+    --primary-light: 270 20% 35%;
+    --primary-glow: 270 30% 60%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 15 25% 95%;
+    --secondary-foreground: 240 10% 20%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 240 5% 96%;
+    --muted-foreground: 240 5% 45%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 45 90% 60%;
+    --accent-foreground: 240 10% 15%;
+    --accent-soft: 45 50% 90%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 240 6% 90%;
+    --input: 240 6% 94%;
+    --ring: 270 15% 25%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
+
+    /* Gradients for modern aesthetics */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-light)));
+    --gradient-accent: linear-gradient(135deg, hsl(var(--accent)), hsl(45 80% 70%));
+    --gradient-subtle: linear-gradient(180deg, hsl(var(--background)), hsl(var(--muted)));
+
+    /* Shadows for depth */
+    --shadow-soft: 0 2px 20px -5px hsl(var(--primary) / 0.1);
+    --shadow-medium: 0 8px 30px -8px hsl(var(--primary) / 0.15);
+    --shadow-strong: 0 15px 40px -10px hsl(var(--primary) / 0.2);
+
+    /* Animation timing */
+    --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-quick: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 
     --sidebar-background: 0 0% 98%;
 
@@ -94,12 +113,102 @@ All colors MUST be HSL.
   }
 }
 
+}
+
 @layer base {
   * {
     @apply border-border;
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-sans;
+    font-family: 'Inter', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+  }
+}
+
+@layer components {
+  /* Portfolio-specific components */
+  .hero-gradient {
+    background: var(--gradient-primary);
+  }
+
+  .accent-gradient {
+    background: var(--gradient-accent);
+  }
+
+  .soft-shadow {
+    box-shadow: var(--shadow-soft);
+  }
+
+  .medium-shadow {
+    box-shadow: var(--shadow-medium);
+  }
+
+  .strong-shadow {
+    box-shadow: var(--shadow-strong);
+  }
+
+  .smooth-transition {
+    transition: var(--transition-smooth);
+  }
+
+  .quick-transition {
+    transition: var(--transition-quick);
+  }
+
+  /* Project card hover effects */
+  .project-card {
+    @apply quick-transition hover:scale-[1.02] hover:-translate-y-1;
+  }
+
+  .project-overlay {
+    @apply absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent;
+    @apply opacity-0 smooth-transition hover:opacity-100;
+  }
+
+  /* Typography hierarchy */
+  .display-text {
+    @apply text-4xl md:text-6xl font-medium leading-tight;
+    font-family: 'Playfair Display', serif;
+  }
+
+  .heading-xl {
+    @apply text-3xl md:text-5xl font-medium leading-tight;
+    font-family: 'Playfair Display', serif;
+  }
+
+  .heading-lg {
+    @apply text-2xl md:text-4xl font-medium;
+    font-family: 'Playfair Display', serif;
+  }
+
+  .heading-md {
+    @apply text-xl md:text-2xl font-medium;
+    font-family: 'Playfair Display', serif;
+  }
+
+  .body-lg {
+    @apply text-lg leading-relaxed;
+  }
+
+  .body-md {
+    @apply text-base leading-relaxed;
+  }
+
+  /* Navigation styles */
+  .nav-link {
+    @apply relative font-medium smooth-transition;
+    @apply after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0;
+    @apply after:bg-accent after:smooth-transition;
+    @apply hover:text-accent hover:after:w-full;
+  }
+
+  .nav-link.active {
+    @apply text-accent after:w-full;
   }
 }
