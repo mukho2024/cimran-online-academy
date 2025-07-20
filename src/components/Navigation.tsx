@@ -7,12 +7,12 @@ const Navigation = () => {
   const [activeSection, setActiveSection] = useState('home');
 
   const navItems = [
-    { id: 'home', label: 'Home' },
-    { id: 'about', label: 'About' },
-    { id: 'projects', label: 'Projects' },
-    { id: 'skills', label: 'Skills' },
-    { id: 'education', label: 'Education' },
-    { id: 'contact', label: 'Contact' },
+    { id: 'home', label: 'Guriga' },
+    { id: 'about', label: 'Iga' },
+    { id: 'projects', label: 'Mashruucyo' },
+    { id: 'skills', label: 'Xirfado' },
+    { id: 'education', label: 'Waxbarasho' },
+    { id: 'contact', label: 'Xiriir' },
   ];
 
   useEffect(() => {
@@ -47,7 +47,7 @@ const Navigation = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <h1 className="text-xl font-serif font-semibold text-primary">Portfolio</h1>
+            <h1 className="text-xl font-serif font-semibold text-primary">Cimraan Akadeemi Onlayn</h1>
           </div>
 
           {/* Desktop Navigation */}

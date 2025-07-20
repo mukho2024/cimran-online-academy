@@ -13,59 +13,59 @@ import {
 
 const Education = () => {
   const education = {
-    institution: "Design Institute University",
-    degree: "Bachelor of Fine Arts in Graphic Design",
-    period: "2022 - 2026 (Expected)",
-    location: "San Francisco, CA",
-    gpa: "3.8/4.0",
-    status: "Junior Year",
-    focus: ["Visual Communication", "Brand Identity", "Digital Design"]
+    institution: "Cimraan Akadeemi Onlayn",
+    degree: "Shahaado Casri ah & Koorsooyin Takhasuska ah",
+    period: "2020 - Hadda (Si joogto ah)",
+    location: "Onlayn Platform",
+    gpa: "Tayo Sare",
+    status: "Ka mid ah Akadeemiyada ugu Fiican",
+    focus: ["Teknoolajiyad", "Ganacsi", "Luuqadaha Ajnabiga"]
   };
 
   const achievements = [
     {
-      title: "Dean's List",
-      period: "Fall 2023, Spring 2024",
-      description: "Academic excellence recognition for maintaining high GPA"
+      title: "Akadeemi Fiican",
+      period: "2023 - 2024",
+      description: "Aqoonsi dheera oo ku saabsan siinta waxbarasho tayo sare leh"
     },
     {
-      title: "Design Competition Winner",
-      period: "Spring 2024",
-      description: "First place in annual student poster design competition"
+      title: "Tartanka Ugu Fiican",
+      period: "2024",
+      description: "Meel koowaad ku tartanka ardayda ugu fiican ee sanadka"
     },
     {
-      title: "Design Club President",
-      period: "2023 - Present",
-      description: "Leading campus design community and organizing workshops"
+      title: "Hogaamiyaha Akadeemi",
+      period: "2020 - Hadda",
+      description: "Hoggaaminta akadeemiga iyo nidaaminta workshops-ka"
     }
   ];
 
   const relevantProjects = [
     {
-      course: "Brand Identity Design",
-      project: "Sustainable Coffee Company Rebrand",
-      grade: "A+",
-      semester: "Fall 2023"
+      course: "Teknoolajiyad",
+      project: "Web Development & Programming",
+      grade: "Fiican",
+      semester: "2023"
     },
     {
-      course: "Typography & Layout",
-      project: "Fashion Magazine Editorial Spread",
-      grade: "A",
-      semester: "Spring 2024"
+      course: "Ganacsi",
+      project: "Business Management & Marketing",
+      grade: "Fiican",
+      semester: "2024"
     },
     {
-      course: "Package Design",
-      project: "Artisanal Tea Collection Packaging",
-      grade: "A+",
-      semester: "Fall 2024"
+      course: "Luuqad",
+      project: "English Communication Skills",
+      grade: "Fiican",
+      semester: "2024"
     }
   ];
 
   const extracurricular = [
-    "Graphic Design Student Association - Member",
-    "Campus Art Gallery - Volunteer Curator",
-    "Design Mentorship Program - Peer Mentor",
-    "Annual Design Exhibition - Organizing Committee"
+    "Shirka Ardayda Teknoolajiyada - Xubin",
+    "Barnaamijka Career Support - Volunteer",
+    "Nidaamka Mentorship - Hogaamiye",
+    "Bandhigga Sanadlaha ah - Guddiga Abaabulka"
   ];
 
   return (
@@ -73,10 +73,10 @@ const Education = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center space-y-4 mb-16">
-          <h2 className="heading-xl text-primary">Education</h2>
+          <h2 className="heading-xl text-primary">Waxbarasho</h2>
           <div className="w-16 h-1 accent-gradient rounded-full mx-auto" />
           <p className="body-lg text-muted-foreground max-w-2xl mx-auto">
-            My academic journey in graphic design, highlighting coursework, achievements, and learning experiences.
+            Socdaalka aqooneed ee akadeemigayaga, siinta koorsooyin, guulo, iyo waaya-aragnimo waxbarasho.
           </p>
         </div>
 
@@ -108,17 +108,17 @@ const Education = () => {
 
                 <div className="grid sm:grid-cols-2 gap-4">
                   <div className="bg-muted/50 p-4 rounded-lg">
-                    <p className="text-sm font-medium text-muted-foreground mb-1">Current Status</p>
+                    <p className="text-sm font-medium text-muted-foreground mb-1">Xaalada Hadda</p>
                     <p className="font-semibold text-card-foreground">{education.status}</p>
                   </div>
                   <div className="bg-muted/50 p-4 rounded-lg">
-                    <p className="text-sm font-medium text-muted-foreground mb-1">GPA</p>
+                    <p className="text-sm font-medium text-muted-foreground mb-1">Tayada</p>
                     <p className="font-semibold text-card-foreground">{education.gpa}</p>
                   </div>
                 </div>
 
                 <div>
-                  <p className="text-sm font-medium text-card-foreground mb-3">Areas of Focus</p>
+                  <p className="text-sm font-medium text-card-foreground mb-3">Meelaha aan Diiradda Saarnay</p>
                   <div className="flex flex-wrap gap-2">
                     {education.focus.map((area) => (
                       <Badge key={area} variant="secondary">
@@ -132,16 +132,16 @@ const Education = () => {
               {/* Quick Stats */}
               <div className="space-y-4">
                 <div className="bg-accent-soft p-4 rounded-lg text-center">
-                  <div className="text-2xl font-bold text-accent">3.8</div>
-                  <div className="text-sm text-muted-foreground">Current GPA</div>
+                  <div className="text-2xl font-bold text-accent">A+</div>
+                  <div className="text-sm text-muted-foreground">Tayada Hadda</div>
                 </div>
                 <div className="bg-primary/10 p-4 rounded-lg text-center">
-                  <div className="text-2xl font-bold text-primary">15+</div>
-                  <div className="text-sm text-muted-foreground">Projects Completed</div>
+                  <div className="text-2xl font-bold text-primary">100+</div>
+                  <div className="text-sm text-muted-foreground">Koorsooyin La Dhammeeyay</div>
                 </div>
                 <div className="bg-secondary p-4 rounded-lg text-center">
-                  <div className="text-2xl font-bold text-secondary-foreground">2</div>
-                  <div className="text-sm text-muted-foreground">Years Remaining</div>
+                  <div className="text-2xl font-bold text-secondary-foreground">∞</div>
+                  <div className="text-sm text-muted-foreground">Koorsooyin Cusub</div>
                 </div>
               </div>
             </div>
@@ -157,7 +157,7 @@ const Education = () => {
                 <div className="p-3 accent-gradient rounded-lg">
                   <Award className="h-5 w-5 text-accent-foreground" />
                 </div>
-                <h3 className="heading-md text-card-foreground">Academic Achievements</h3>
+                <h3 className="heading-md text-card-foreground">Guulaha Waxbarasho</h3>
               </div>
               
               <div className="space-y-4">
@@ -183,7 +183,7 @@ const Education = () => {
                 <div className="p-3 bg-primary/10 rounded-lg">
                   <BookOpen className="h-5 w-5 text-primary" />
                 </div>
-                <h3 className="heading-md text-card-foreground">Notable Course Projects</h3>
+                <h3 className="heading-md text-card-foreground">Mashruucyada Muhiimka ah</h3>
               </div>
               
               <div className="space-y-4">
@@ -212,7 +212,7 @@ const Education = () => {
                 <div className="p-3 bg-secondary rounded-lg">
                   <Users className="h-5 w-5 text-secondary-foreground" />
                 </div>
-                <h3 className="heading-md text-card-foreground">Extracurricular Activities</h3>
+                <h3 className="heading-md text-card-foreground">Hawlaha Dheeriga ah</h3>
               </div>
               
               <div className="space-y-3">
@@ -226,18 +226,18 @@ const Education = () => {
             </div>
 
             <div className="space-y-4">
-              <h4 className="font-semibold text-card-foreground">Looking Forward</h4>
+              <h4 className="font-semibold text-card-foreground">Mustaqbalka</h4>
               <p className="text-sm text-muted-foreground">
-                As I continue my studies, I'm focusing on developing advanced skills in digital design, 
-                sustainable design practices, and building a strong professional network in the design industry.
+                Sidaan sii wadno, waxaan diiradda saaryaa horumarinta xirfado casri ah, nidaamyo waxbarasho 
+                joogto ah, iyo dhisidda shabakad xirfadeed oo adag oo warshadaha kala duwan.
               </p>
               <div className="flex gap-3">
                 <Button variant="minimal" size="sm">
                   <ExternalLink className="mr-2 h-3 w-3" />
-                  View Transcript
+                  Eeg Natiijada
                 </Button>
                 <Button variant="ghost" size="sm">
-                  Course Portfolio
+                  Portfolio Koorsada
                 </Button>
               </div>
             </div>

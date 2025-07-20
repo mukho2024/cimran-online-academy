@@ -35,17 +35,17 @@ const Hero = () => {
           {/* Main Heading */}
           <div className="space-y-4">
             <h1 className="display-text bg-gradient-primary bg-clip-text text-transparent">
-              Graphic Designer
+              Akadeemi Onlayn
             </h1>
             <h2 className="heading-lg text-muted-foreground">
-              Academy Student & Creative Storyteller
+              Waxbarasho Casri ah & Aqoon Ballaaran
             </h2>
           </div>
 
           {/* Description */}
           <p className="body-lg text-muted-foreground max-w-2xl mx-auto">
-            Passionate about creating meaningful visual experiences through thoughtful design. 
-            Currently studying graphic design and building a portfolio of course projects and creative explorations.
+            Waxbarashada casriga ah oo loogu talagalay mustaqbalka. Waa meel ay ku helaan 
+            ardayda aqoonta teknoolajiyada casriga ah iyo xirfadaha ku habboon suuqa shaqada.
           </p>
 
           {/* CTA Buttons */}
@@ -56,7 +56,7 @@ const Hero = () => {
               onClick={scrollToProjects}
               className="min-w-[180px]"
             >
-              View My Work
+              Eeg Shaqadayada
               <ArrowDown className="ml-2 h-4 w-4" />
             </Button>
             <Button 
@@ -66,15 +66,15 @@ const Hero = () => {
               className="min-w-[180px]"
             >
               <Mail className="mr-2 h-4 w-4" />
-              Get In Touch
+              Nala Soo Xiriir
             </Button>
           </div>
 
           {/* Skills Preview */}
           <div className="pt-8">
-            <p className="text-sm text-muted-foreground mb-4">Currently working with</p>
+            <p className="text-sm text-muted-foreground mb-4">Hadda waan la shaqaynaynaa</p>
             <div className="flex flex-wrap justify-center gap-3">
-              {['Adobe Photoshop', 'Illustrator', 'InDesign', 'Figma', 'Typography'].map((skill) => (
+              {['Waxbarasho Online', 'Video Courses', 'Live Classes', 'Certificates', 'Career Support'].map((skill) => (
                 <span 
                   key={skill} 
                   className="px-3 py-1 bg-secondary/50 text-secondary-foreground rounded-full text-sm"

@@ -14,21 +14,23 @@ const Footer = () => {
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           {/* Brand */}
           <div className="space-y-4">
-            <h3 className="text-xl font-serif font-semibold">Portfolio</h3>
+            <h3 className="text-xl font-serif font-semibold">Cimraan Akadeemi</h3>
             <p className="text-primary-foreground/80 text-sm">
-              Passionate graphic design student crafting meaningful visual experiences through thoughtful design.
+              Akadeemi waxbarasho oo ku takhasustay siinta koorsooyin casri ah iyo horumarinta xirfadaha mustaqbalka.
             </p>
           </div>
 
           {/* Quick Links */}
           <div className="space-y-4">
-            <h4 className="font-semibold">Quick Links</h4>
+            <h4 className="font-semibold">Xiriirro Dhaqso ah</h4>
             <div className="grid grid-cols-2 gap-2 text-sm">
-              {['About', 'Projects', 'Skills', 'Education', 'Contact'].map((item) => (
+              {['Naga', 'Mashruucyo', 'Xirfado', 'Waxbarasho', 'Xiriir'].map((item, index) => {
+                const ids = ['about', 'projects', 'skills', 'education', 'contact'];
+                return (
                 <button
                   key={item}
                   onClick={() => {
-                    const element = document.getElementById(item.toLowerCase());
+                    const element = document.getElementById(ids[index]);
                     if (element) {
                       element.scrollIntoView({ behavior: 'smooth' });
                     }
@@ -37,17 +39,18 @@ const Footer = () => {
                 >
                   {item}
                 </button>
-              ))}
+              );
+              })}
             </div>
           </div>
 
           {/* Contact Info */}
           <div className="space-y-4">
-            <h4 className="font-semibold">Let's Connect</h4>
+            <h4 className="font-semibold">Nala Soo Xiriir</h4>
             <div className="space-y-2 text-sm text-primary-foreground/80">
-              <p>hello@yourportfolio.com</p>
-              <p>San Francisco, CA</p>
-              <p>Available for opportunities</p>
+              <p>info@cimraanacademy.com</p>
+              <p>Onlayn Platform</p>
+              <p>Diyaar u ah fursado</p>
             </div>
           </div>
         </div>
@@ -55,9 +58,9 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="flex flex-col sm:flex-row justify-between items-center pt-8 border-t border-primary-foreground/20">
           <div className="flex items-center gap-1 text-sm text-primary-foreground/80 mb-4 sm:mb-0">
-            <span>© {currentYear} Made with</span>
+            <span>© {currentYear} La sameeyay</span>
             <Heart className="h-4 w-4 text-accent fill-current" />
-            <span>by a design student</span>
+            <span>Cimraan Akadeemi Onlayn</span>
           </div>
           
           <Button
@@ -67,7 +70,7 @@ const Footer = () => {
             className="text-primary-foreground hover:text-accent hover:bg-primary-foreground/10"
           >
             <ArrowUp className="h-4 w-4 mr-2" />
-            Back to Top
+            Kor u Laabo
           </Button>
         </div>
       </div>

@@ -30,8 +30,8 @@ const Contact = () => {
     e.preventDefault();
     // Handle form submission here
     toast({
-      title: "Message sent!",
-      description: "Thank you for reaching out. I'll get back to you soon.",
+      title: "Farriinta la diray!",
+      description: "Mahadsanid soo xiriirka. Waanu kugu jawaabi doonaa dhaqso.",
     });
     setFormData({ name: '', email: '', subject: '', message: '' });
   };
@@ -47,19 +47,19 @@ const Contact = () => {
     {
       icon: Mail,
       label: "Email",
-      value: "hello@yourportfolio.com",
-      href: "mailto:hello@yourportfolio.com"
+      value: "info@cimraanacademy.com",
+      href: "mailto:info@cimraanacademy.com"
     },
     {
       icon: Phone,
-      label: "Phone",
-      value: "+1 (555) 123-4567",
-      href: "tel:+15551234567"
+      label: "Telefoon",
+      value: "+252 61 123 4567",
+      href: "tel:+25261123467"
     },
     {
       icon: MapPin,
-      label: "Location",
-      value: "San Francisco, CA",
+      label: "Meel",
+      value: "Onlayn Platform",
       href: "#"
     }
   ];
@@ -68,19 +68,19 @@ const Contact = () => {
     {
       icon: Linkedin,
       label: "LinkedIn",
-      href: "https://linkedin.com/in/yourprofile",
+      href: "https://linkedin.com/company/cimraanacademy",
       color: "text-blue-600"
     },
     {
       icon: Instagram,
       label: "Instagram",
-      href: "https://instagram.com/yourdesign",
+      href: "https://instagram.com/cimraanacademy",
       color: "text-pink-600"
     },
     {
       icon: Github,
       label: "GitHub",
-      href: "https://github.com/yourprofile",
+      href: "https://github.com/cimraanacademy",
       color: "text-gray-800"
     }
   ];
@@ -90,10 +90,10 @@ const Contact = () => {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center space-y-4 mb-16">
-          <h2 className="heading-xl text-primary">Let's Connect</h2>
+          <h2 className="heading-xl text-primary">Nala Soo Xiriir</h2>
           <div className="w-16 h-1 accent-gradient rounded-full mx-auto" />
           <p className="body-lg text-muted-foreground max-w-2xl mx-auto">
-            I'm always excited to discuss new projects, creative ideas, or opportunities to be part of your visions.
+            Waxaan had iyo jeer ku faraxsan nahay inaan kala hadalno mashruucyo cusub, fikrado hal-abuur leh, ama fursado aan u noqon karno qayb ka mid ah.
           </p>
         </div>
 
@@ -102,7 +102,7 @@ const Contact = () => {
           <div className="space-y-8">
             {/* Contact Cards */}
             <div className="space-y-6">
-              <h3 className="heading-lg text-card-foreground">Get in Touch</h3>
+              <h3 className="heading-lg text-card-foreground">Nala Xiriir</h3>
               
               {contactInfo.map((info) => (
                 <Card key={info.label} className="p-4 soft-shadow hover:shadow-medium smooth-transition">
@@ -124,7 +124,7 @@ const Contact = () => {
 
             {/* Social Links */}
             <Card className="p-6 soft-shadow">
-              <h4 className="font-semibold text-card-foreground mb-4">Follow My Work</h4>
+              <h4 className="font-semibold text-card-foreground mb-4">Nagu Raac</h4>
               <div className="flex gap-4">
                 {socialLinks.map((social) => (
                   <a
@@ -148,20 +148,20 @@ const Contact = () => {
                   <div className="p-2 bg-green-100 rounded-lg">
                     <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse" />
                   </div>
-                  <h4 className="font-semibold text-card-foreground">Currently Available</h4>
+                  <h4 className="font-semibold text-card-foreground">Hadda Diyaar</h4>
                 </div>
                 <p className="text-sm text-muted-foreground">
-                  Open to internship opportunities, freelance projects, and collaborative work. 
-                  I typically respond within 24-48 hours.
+                  Diyaar u ah fursado waxbarasho, mashruucyo freelance, iyo shaqo iskaashi. 
+                  Inta badan waan jawaabaa gudaha 24-48 saacadood.
                 </p>
                 <div className="flex gap-2">
                   <Button variant="outline" size="sm">
                     <Calendar className="mr-2 h-3 w-3" />
-                    Schedule Call
+                    Ballan Call
                   </Button>
                   <Button variant="ghost" size="sm">
                     <Coffee className="mr-2 h-3 w-3" />
-                    Coffee Chat
+                    Sheeko Gaaban
                   </Button>
                 </div>
               </div>
@@ -171,17 +171,17 @@ const Contact = () => {
           {/* Contact Form */}
           <Card className="p-8 soft-shadow">
             <form onSubmit={handleSubmit} className="space-y-6">
-              <h3 className="heading-lg text-card-foreground mb-6">Send a Message</h3>
+              <h3 className="heading-lg text-card-foreground mb-6">Dir Fariin</h3>
               
               <div className="grid sm:grid-cols-2 gap-4">
                 <div className="space-y-2">
-                  <Label htmlFor="name">Name</Label>
+                  <Label htmlFor="name">Magac</Label>
                   <Input
                     id="name"
                     name="name"
                     value={formData.name}
                     onChange={handleChange}
-                    placeholder="Your name"
+                    placeholder="Magacaaga"
                     required
                   />
                 </div>
@@ -193,32 +193,32 @@ const Contact = () => {
                     type="email"
                     value={formData.email}
                     onChange={handleChange}
-                    placeholder="your.email@example.com"
+                    placeholder="emailkaaga@example.com"
                     required
                   />
                 </div>
               </div>
 
               <div className="space-y-2">
-                <Label htmlFor="subject">Subject</Label>
+                <Label htmlFor="subject">Mawduuc</Label>
                 <Input
                   id="subject"
                   name="subject"
                   value={formData.subject}
                   onChange={handleChange}
-                  placeholder="What's this about?"
+                  placeholder="Maxaa ku saabsan?"
                   required
                 />
               </div>
 
               <div className="space-y-2">
-                <Label htmlFor="message">Message</Label>
+                <Label htmlFor="message">Fariin</Label>
                 <Textarea
                   id="message"
                   name="message"
                   value={formData.message}
                   onChange={handleChange}
-                  placeholder="Tell me about your project or question..."
+                  placeholder="Noo sheeg mashruucaaga ama su'aashaada..."
                   rows={5}
                   required
                 />
@@ -226,11 +226,11 @@ const Contact = () => {
 
               <Button type="submit" variant="hero" size="lg" className="w-full">
                 <Send className="mr-2 h-4 w-4" />
-                Send Message
+                Dir Fariinta
               </Button>
 
               <p className="text-xs text-muted-foreground text-center">
-                I respect your privacy. Your information will never be shared with third parties.
+                Waan ixtiraamaa sirnaanta. Macluumaadkaaga lama wadaagi doono cid kale.
               </p>
             </form>
           </Card>

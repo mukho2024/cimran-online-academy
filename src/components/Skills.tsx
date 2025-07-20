@@ -14,68 +14,68 @@ import {
 
 const Skills = () => {
   const softwareSkills = [
-    { name: "Adobe Photoshop", level: 85, category: "Image Editing" },
-    { name: "Adobe Illustrator", level: 90, category: "Vector Graphics" },
-    { name: "Adobe InDesign", level: 80, category: "Layout Design" },
-    { name: "Figma", level: 75, category: "UI/UX Design" },
-    { name: "Adobe XD", level: 70, category: "Prototyping" },
-    { name: "Procreate", level: 65, category: "Digital Illustration" }
+    { name: "Qoraal & Hadalka", level: 85, category: "Luuqadda English" },
+    { name: "Kombiyuutarka", level: 90, category: "Microsoft Office" },
+    { name: "Internet-ka", level: 80, category: "Online Tools" },
+    { name: "Programming", level: 75, category: "Web Development" },
+    { name: "Ganacsiga", level: 70, category: "Business Skills" },
+    { name: "Marketing", level: 65, category: "Digital Marketing" }
   ];
 
   const designSkills = [
     {
       icon: Type,
-      title: "Typography",
-      description: "Font pairing, hierarchy, and typographic systems",
-      skills: ["Type Classification", "Hierarchy Design", "Custom Lettering"]
+      title: "Waxbarasho Online",
+      description: "Koorsooyin online ah oo tayo sare leh",
+      skills: ["Video Lessons", "Live Classes", "Interactive Learning"]
     },
     {
       icon: Palette,
-      title: "Color Theory",
-      description: "Color psychology, palettes, and brand applications",
-      skills: ["Color Harmony", "Brand Palettes", "Psychology"]
+      title: "Career Support",
+      description: "Taageero mustaqbal iyo shaqo-helitaan",
+      skills: ["CV Writing", "Interview Prep", "Job Placement"]
     },
     {
       icon: Layout,
-      title: "Layout Design",
-      description: "Grid systems, composition, and visual hierarchy",
-      skills: ["Grid Systems", "Composition", "Visual Flow"]
+      title: "Expert Instructors",
+      description: "Macalimiin khibrad dheer leh",
+      skills: ["Industry Experience", "Teaching Skills", "Mentorship"]
     },
     {
       icon: PenTool,
-      title: "Brand Identity",
-      description: "Logo design, brand systems, and visual identity",
-      skills: ["Logo Design", "Brand Guidelines", "Visual Systems"]
+      title: "Practical Skills",
+      description: "Xirfado la isticmaalo shaqada",
+      skills: ["Real Projects", "Hands-on Learning", "Portfolio Building"]
     },
     {
       icon: Monitor,
-      title: "Digital Design",
-      description: "Web design, mobile interfaces, and user experience",
-      skills: ["Web Design", "Mobile UI", "User Experience"]
+      title: "Technology Focus",
+      description: "Teknoolajiyada ugu dambeeyay",
+      skills: ["Modern Tools", "Latest Software", "Digital Skills"]
     },
     {
       icon: Camera,
-      title: "Photography",
-      description: "Product photography, composition, and image editing",
-      skills: ["Product Photos", "Composition", "Retouching"]
+      title: "Flexible Learning",
+      description: "Waxbarasho la qabsado waqtiga aad doonto",
+      skills: ["Self-paced", "Part-time Options", "Weekend Classes"]
     }
   ];
 
   const coursework = [
-    "Graphic Design Fundamentals",
-    "Typography & Layout",
-    "Visual Identity Design",
-    "Package Design",
-    "Digital Interface Design",
-    "Art History & Theory",
-    "Color Theory",
-    "Print Production"
+    "Asaasiyaasha Programming",
+    "Web Development",
+    "Business Administration",
+    "English Communication",
+    "Digital Marketing",
+    "Computer Skills",
+    "Microsoft Office",
+    "Data Analysis"
   ];
 
   const certifications = [
-    { name: "Adobe Certified Associate - Photoshop", issuer: "Adobe", year: "2024" },
-    { name: "Graphic Design Specialization", issuer: "Coursera", year: "2023" },
-    { name: "Typography Fundamentals", issuer: "Online Course", year: "2023" }
+    { name: "Microsoft Office Specialist", issuer: "Microsoft", year: "2024" },
+    { name: "Digital Marketing Certificate", issuer: "Google", year: "2023" },
+    { name: "Programming Fundamentals", issuer: "Cimraan Academy", year: "2023" }
   ];
 
   return (
@@ -83,16 +83,16 @@ const Skills = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center space-y-4 mb-16">
-          <h2 className="heading-xl text-primary">Skills & Software</h2>
+          <h2 className="heading-xl text-primary">Xirfadaha & Aqoonta</h2>
           <div className="w-16 h-1 accent-gradient rounded-full mx-auto" />
           <p className="body-lg text-muted-foreground max-w-2xl mx-auto">
-            Technical proficiencies and design competencies developed through coursework and hands-on practice.
+            Xirfado teknoolajiyad ah iyo aqoon ganacsi oo lagu helo koorsoyinkeenu iyo tababarro gacanta lagu hayo.
           </p>
         </div>
 
         {/* Software Skills */}
         <div className="mb-16">
-          <h3 className="heading-lg text-center mb-8">Software Proficiency</h3>
+          <h3 className="heading-lg text-center mb-8">Xirfadaha Muhiimka ah</h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {softwareSkills.map((skill) => (
               <Card key={skill.name} className="p-6 soft-shadow hover:shadow-medium smooth-transition">
@@ -113,7 +113,7 @@ const Skills = () => {
 
         {/* Design Skills */}
         <div className="mb-16">
-          <h3 className="heading-lg text-center mb-8">Design Competencies</h3>
+          <h3 className="heading-lg text-center mb-8">Adeegyadaayada</h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {designSkills.map((skill) => (
               <Card key={skill.title} className="p-6 soft-shadow hover:shadow-medium smooth-transition group">
@@ -147,7 +147,7 @@ const Skills = () => {
                 <div className="p-3 bg-primary/10 rounded-lg">
                   <BookOpen className="h-5 w-5 text-primary" />
                 </div>
-                <h3 className="heading-md text-card-foreground">Relevant Coursework</h3>
+                <h3 className="heading-md text-card-foreground">Koorsoyinkeenu</h3>
               </div>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 {coursework.map((course) => (
@@ -167,7 +167,7 @@ const Skills = () => {
                 <div className="p-3 bg-accent/10 rounded-lg">
                   <Award className="h-5 w-5 text-accent" />
                 </div>
-                <h3 className="heading-md text-card-foreground">Certifications</h3>
+                <h3 className="heading-md text-card-foreground">Shahaadooyinka</h3>
               </div>
               <div className="space-y-4">
                 {certifications.map((cert) => (
