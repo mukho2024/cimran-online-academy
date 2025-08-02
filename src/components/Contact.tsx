@@ -53,8 +53,8 @@ const Contact = () => {
     {
       icon: Phone,
       label: "Telefoon",
-      value: "+252 61 123 4567",
-      href: "tel:+25261123467"
+      value: "+252 63 463 8497",
+      href: "tel:+252634638497"
     },
     {
       icon: MapPin,
