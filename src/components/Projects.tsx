@@ -22,6 +22,50 @@ const Projects = () => {
     },
     {
       id: 2,
+      title: "Koorsada Video Editing & Software",
+      subtitle: "Adobe Premiere Pro, After Effects & Professional Tools",
+      description: "Waxaan idiin diyaarinay courses dhameystiran oo aad muhiim u ah waxa aad ku soo biir kartaa ama aad iska duwaan galisa nember ka hoos ku qoran.",
+      image: "/lovable-uploads/05d1bce7-cacb-4a1f-91a0-dd16c78f52ae.png",
+      tools: ["Adobe Premiere Pro", "After Effects", "Adobe Illustrator", "Adobe Photoshop"],
+      category: "Video",
+      course: "Video Production & Editing",
+      process: ["Basic Video Editing", "Advanced Effects", "Color Grading", "Professional Output"]
+    },
+    {
+      id: 3,
+      title: "Koorsada Camera Training",
+      subtitle: "Professional Photography & Videography",
+      description: "Baro xirfad si aad uga baxdid faqriga - camera training iyo drawn training oo dhameystiran.",
+      image: "/lovable-uploads/ab6b2379-1dc4-41a9-a79a-5d1c9b582890.png",
+      tools: ["Professional Cameras", "Lighting Equipment", "Editing Software"],
+      category: "Photography",
+      course: "Camera & Photography Training",
+      process: ["Camera Basics", "Composition Techniques", "Lighting Setup", "Post Processing"]
+    },
+    {
+      id: 4,
+      title: "Koorsada Fursada Chuma Ah",
+      subtitle: "Complete Academy Program",
+      description: "Courses dhameystiran oo graphic design ah ayaan ugu talagalay macamisha ku xidhan bartayda telegram 10 arday ee u horeya ayaan heli doona.",
+      image: "/lovable-uploads/ccb36333-8db8-48a3-a9e4-a70c9af21f13.png",
+      tools: ["All Software Packages", "Design Tools", "Project Management"],
+      category: "Complete Package",
+      course: "Full Academy Experience",
+      process: ["Foundation Course", "Skill Development", "Project Work", "Certification"]
+    },
+    {
+      id: 5,
+      title: "Koorsada Teknoolajiyada",
+      subtitle: "Programming iyo Web Development",
+      description: "Koorso dhameystiran oo ku saabsan barashada luuqadaha programming-ka, dhisidda website-yada, iyo app-yada mobile-ka.",
+      image: projectBranding,
+      tools: ["HTML", "CSS", "JavaScript", "React"],
+      category: "Teknoolajiyad",
+      course: "Full Stack Development",
+      process: ["Asaasiyaasha Programming", "Frontend Development", "Backend Development", "Project Building"]
+    },
+    {
+      id: 6,
       title: "Koorsada Ganacsiga",
       subtitle: "Business iyo Maamulka",
       description: "Koorsooyin ku saabsan dhisidda ganacsi, maamulka lacagta, suuq-geynta, iyo horumarinta xirfadaha hogaaminta.",
@@ -32,7 +76,7 @@ const Projects = () => {
       process: ["Business Planning", "Financial Management", "Marketing Strategy", "Leadership Skills"]
     },
     {
-      id: 3,
+      id: 7,
       title: "Koorsada Luuqadaha",
       subtitle: "English iyo Communication Skills",
       description: "Horumarinta xirfadaha luuqadda English-ka, qoraalka, hadalka, iyo isdhexgalka dadka.",
@@ -43,7 +87,7 @@ const Projects = () => {
       process: ["Grammar Basics", "Vocabulary Building", "Speaking Practice", "Writing Skills"]
     },
     {
-      id: 4,
+      id: 8,
       title: "Koorsada Digital Skills",
       subtitle: "Computer iyo Internet Skills",
       description: "Barashada adeegsiga kombiyuutarka, internet-ka, social media-da, iyo qalabka dijital-ka.",
