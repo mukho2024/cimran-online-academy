@@ -1,6 +1,6 @@
 import { Button } from '@/components/ui/button';
 import { ArrowDown, Download, Mail } from 'lucide-react';
-import heroImage from '@/assets/hero-image.jpg';
+import heroImage from '/lovable-uploads/b03d5c8a-dae2-4a20-955a-39bfd36210dd.png';
 
 const Hero = () => {
   const scrollToProjects = () => {
