@@ -11,14 +11,14 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: "Koorsada Teknoolajiyada",
-      subtitle: "Programming iyo Web Development",
-      description: "Koorso dhameystiran oo ku saabsan barashada luuqadaha programming-ka, dhisidda website-yada, iyo app-yada mobile-ka.",
-      image: projectBranding,
-      tools: ["HTML", "CSS", "JavaScript", "React"],
-      category: "Teknoolajiyad",
-      course: "Full Stack Development",
-      process: ["Asaasiyaasha Programming", "Frontend Development", "Backend Development", "Project Building"]
+      title: "Koorsada Graphic Design",
+      subtitle: "Adobe Photoshop, Illustrator & Digital Design",
+      description: "Koorso dhameystiran oo ku saabsan barashada Graphic Design, Adobe Photoshop, Adobe Illustrator, iyo Pixel Lap. Baro xirfadaha samaynta sawirrada iyo nashqadaha casriga ah.",
+      image: "/lovable-uploads/044385de-ca2e-4311-8ec7-f4b61fa77640.png",
+      tools: ["Adobe Photoshop", "Adobe Illustrator", "Pixel Lap"],
+      category: "Design",
+      course: "Graphic Design Course",
+      process: ["Photoshop Basics", "Illustrator Fundamentals", "Design Principles", "Portfolio Creation"]
     },
     {
       id: 2,
